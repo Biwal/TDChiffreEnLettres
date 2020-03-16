@@ -48,7 +48,7 @@ namespace TDChiffreEnLettres
 
                 if (modDozens == 0 ) {
                     if ((divDozens == 2 || divDozens == 8)&& divHundreds>0) builder.Append("s");
-                    else if (divDozens == 9) builder.Append("-dix");
+                    else if (divDozens == 9 || divDozens == 7) builder.Append("-dix");
                     return;
                 }
 
