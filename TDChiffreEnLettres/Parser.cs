@@ -10,9 +10,15 @@ namespace TDChiffreEnLettres
         {
             StringBuilder builder = new StringBuilder();
             builder.Append("Le nombre ").Append(value.ToString()).Append(" s'écrit : ").AppendLine();
+            detectZero(value, builder);
             parseHundreds(value,builder);
             parseDozen(value, builder);
             Console.WriteLine(builder);
+        }
+
+        private void detectZero(int value, StringBuilder builder)
+        {
+            if (value == 0) builder.Append("zéro");
         }
 
         private void parseHundreds(int value, StringBuilder builder) {
@@ -29,27 +35,28 @@ namespace TDChiffreEnLettres
 
         private void parseDozen(int value, StringBuilder builder)
         {
+            int divHundreds = value / 100;
             int dozenNumber = value % 100;
             int divDozens = dozenNumber / 10;
             int modDozens = dozenNumber % 10;
 
             if (dozenNumber == 0) return;
-
-
             else if (divDozens == 1) builder.Append(get11To19ToString(modDozens));
             else
             {
                 builder.Append(getDozenToString(divDozens));
 
-                if (modDozens == 0) {
-                    if (divDozens == 2 || divDozens == 8) builder.Append("s");
+                if (modDozens == 0 ) {
+                    if ((divDozens == 2 || divDozens == 8)&& divHundreds>0) builder.Append("s");
                     else if (divDozens == 9) builder.Append("-dix");
                     return;
                 }
 
-
-                if ((modDozens == 1) && (divDozens != 8 && divDozens != 9)) builder.Append("-et-");
-                else builder.Append("-");
+                if (divHundreds > 0 || divDozens > 0)
+                {
+                    if (modDozens == 1 && (divDozens != 8 && divDozens != 9)) builder.Append("-et-");
+                    else builder.Append("-");
+                }
                 
                 
                 if (divDozens == 7 || divDozens == 9)
@@ -102,6 +109,9 @@ namespace TDChiffreEnLettres
             string digit = "";
             switch (value)
             {
+                case 0:
+                    digit = "dix";
+                    break;
                 case 1:
                     digit = "onze";
                     break;

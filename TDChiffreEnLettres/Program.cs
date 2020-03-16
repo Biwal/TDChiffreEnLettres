@@ -6,9 +6,12 @@ namespace TDChiffreEnLettres
     {
         static void Main(string[] args)
         {
-            UserInput userInput = new UserInput();
-            Parser parser = new Parser();
-            parser.parseIntToString(userInput.Value);
+            while (true)
+            {
+                UserInput userInput = new UserInput();
+                Parser parser = new Parser();
+                parser.parseIntToString(userInput.Value);
+            }
         }
     }
 }

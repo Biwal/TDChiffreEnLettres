@@ -20,16 +20,7 @@ namespace TDChiffreEnLettres
             try
             {
                 this.Value = Int32.Parse(input);
-                if (this.Value < 0)
-                {
-                    Console.WriteLine("Le nombre est inférieur à 0 !");
-                    this.getValueFromUser();
-                }
-                else if (this.Value > 999)
-                {
-                    Console.WriteLine("Le nombre est supérieur à 999 !");
-                    this.getValueFromUser();
-                }
+                this.checkInputValidity();
             }
             catch (FormatException)
             {
@@ -38,20 +29,18 @@ namespace TDChiffreEnLettres
             }
         }
 
-        private Boolean checkInputValidity()
+        private void checkInputValidity()
         {
             if (this.Value < 0)
             {
                 Console.WriteLine("Le nombre est inférieur à 0 !");
-                return false;
+                this.getValueFromUser();
             }
             else if (this.Value > 999)
             {
                 Console.WriteLine("Le nombre est supérieur à 999 !");
-                return false;
+                this.getValueFromUser();
             }
-            return true;
-
         }
     }
 }
