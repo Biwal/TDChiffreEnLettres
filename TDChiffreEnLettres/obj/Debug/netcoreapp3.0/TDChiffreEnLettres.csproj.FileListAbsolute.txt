@@ -1,0 +1,11 @@
+C:\Users\GMassonnat\source\repos\TDChiffreEnLettres\TDChiffreEnLettres\obj\Debug\netcoreapp3.0\TDChiffreEnLettres.AssemblyInfoInputs.cache
+C:\Users\GMassonnat\source\repos\TDChiffreEnLettres\TDChiffreEnLettres\obj\Debug\netcoreapp3.0\TDChiffreEnLettres.AssemblyInfo.cs
+C:\Users\GMassonnat\source\repos\TDChiffreEnLettres\TDChiffreEnLettres\bin\Debug\netcoreapp3.0\TDChiffreEnLettres.exe
+C:\Users\GMassonnat\source\repos\TDChiffreEnLettres\TDChiffreEnLettres\bin\Debug\netcoreapp3.0\TDChiffreEnLettres.deps.json
+C:\Users\GMassonnat\source\repos\TDChiffreEnLettres\TDChiffreEnLettres\bin\Debug\netcoreapp3.0\TDChiffreEnLettres.runtimeconfig.json
+C:\Users\GMassonnat\source\repos\TDChiffreEnLettres\TDChiffreEnLettres\bin\Debug\netcoreapp3.0\TDChiffreEnLettres.runtimeconfig.dev.json
+C:\Users\GMassonnat\source\repos\TDChiffreEnLettres\TDChiffreEnLettres\bin\Debug\netcoreapp3.0\TDChiffreEnLettres.dll
+C:\Users\GMassonnat\source\repos\TDChiffreEnLettres\TDChiffreEnLettres\bin\Debug\netcoreapp3.0\TDChiffreEnLettres.pdb
+C:\Users\GMassonnat\source\repos\TDChiffreEnLettres\TDChiffreEnLettres\obj\Debug\netcoreapp3.0\TDChiffreEnLettres.dll
+C:\Users\GMassonnat\source\repos\TDChiffreEnLettres\TDChiffreEnLettres\obj\Debug\netcoreapp3.0\TDChiffreEnLettres.pdb
+C:\Users\GMassonnat\source\repos\TDChiffreEnLettres\TDChiffreEnLettres\obj\Debug\netcoreapp3.0\TDChiffreEnLettres.csprojAssemblyReference.cache
