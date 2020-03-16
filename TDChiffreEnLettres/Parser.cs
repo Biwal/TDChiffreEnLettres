@@ -35,18 +35,23 @@ namespace TDChiffreEnLettres
 
             if (dozenNumber == 0) return;
 
-            if (divDozens == 0) builder.Append(getDigitToString(modDozens));
+
             else if (divDozens == 1) builder.Append(get11To19ToString(modDozens));
             else
             {
                 builder.Append(getDozenToString(divDozens));
 
                 if (modDozens == 0) {
-                    if (divDozens == 2 || divDozens == 9 || divDozens == 8) builder.Append("s");
+                    if (divDozens == 2 || divDozens == 8) builder.Append("s");
+                    else if (divDozens == 9) builder.Append("-dix");
                     return;
                 }
+
+
+                if ((modDozens == 1) && (divDozens != 8 && divDozens != 9)) builder.Append("-et-");
+                else builder.Append("-");
                 
-                builder.Append("-");
+                
                 if (divDozens == 7 || divDozens == 9)
                 {
                     builder.Append(get11To19ToString(modDozens));
